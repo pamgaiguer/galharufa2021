@@ -4,6 +4,8 @@ import { AboutComponent } from './about/about.component';
 import { CastingComponent } from './casting/casting.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +13,8 @@ import { ServicesComponent } from './services/services.component';
     ServicesComponent,
     CastingComponent,
     ContactComponent,
+    HomeComponent,
+    NotFoundComponent,
   ],
   imports: [CommonModule],
 })
