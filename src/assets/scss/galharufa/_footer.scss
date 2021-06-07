@@ -1,0 +1,54 @@
+.footer {
+  background-attachment: fixed;
+  position: relative;
+  line-height: 20px;
+  background: $black-footer-bg;
+  color: $white-color;
+  box-shadow: 0px 10px 10px -10px rgb(0 0 0 / 50%);
+  nav {
+    > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+      > li {
+        display: inline-block;
+        padding: 10px 0px;
+        margin: 15px 3px;
+        line-height: 20px;
+        text-align: center;
+      }
+      a {
+        &:not(.btn) {
+          color: #777777;
+          display: block;
+          margin-bottom: 3px;
+          line-height: 1.6;
+          opacity: 0.8;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 600;
+          &:hover {
+            color: #777777;
+            opacity: 1;
+          }
+          &:focus {
+            color: #777777;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    color: #777777;
+    padding: 10px 0px;
+    font-size: 14px;
+    margin: 15px 3px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .heart {
+    color: #eb5e28;
+  }
+}

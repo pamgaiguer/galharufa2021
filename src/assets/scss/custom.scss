@@ -1,0 +1,22 @@
+@import "galharufa/variables";
+@import "galharufa/mixins";
+@import "galharufa/typography";
+@import "galharufa/navbar";
+@import "galharufa/footer";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*html tags*/
+body {
+  a {
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      cursor: hover;
+    }
+  }
+}
