@@ -9,13 +9,13 @@
       <div class="row">
         <div class="col">
           <div class="card">
-            <form>
+            <form novalidate class="needs-validation">
               <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="form-name" placeholder="nome" />
+                <input type="text" class="form-control" id="form-name" placeholder="nome" required />
                 <label for="form-name" class="form-label">Nome</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="form-email" placeholder="name@example.com" aria-describedby="emailHelp" />
+                <input type="email" class="form-control" id="form-email" placeholder="name@example.com" required />
                 <label for="form-email" class="form-label">Email</label>
               </div>
               <div class="form-floating mb-3">
@@ -23,16 +23,17 @@
                 <label for="phone" class="form-label">Telefone</label>
               </div>
               <div class="form-floating mb-3">
-                <textarea class="form-control" id="form-message" rows="3" placeholder="name@example.com"></textarea>
+                <textarea class="form-control" id="form-message" rows="3" placeholder="name@example.com" required></textarea>
                 <label for="form-message" class="form-label">Mensagem</label>
               </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="submit" class="btn btn-outline-primary">Enviar</button>
             </form>
           </div>
         </div>
+
         <div class="col">
           <div class="card">
-            <h3 class="mt-0">Entre em contato conosco!</h3>
+            <h3 class="mt-0">Entre em contato com a gente!</h3>
             <br />
             <ul class="list-unstyled">
               <li>
