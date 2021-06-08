@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { servicesMockup } from '../../API';
 
 @Component({
   selector: 'app-services',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent implements OnInit {
+  services = servicesMockup;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
