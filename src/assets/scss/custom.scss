@@ -1,8 +1,9 @@
-@import "galharufa/variables";
-@import "galharufa/mixins";
-@import "galharufa/typography";
-@import "galharufa/navbar";
-@import "galharufa/footer";
+@import 'galharufa/variables';
+@import 'galharufa/mixins';
+@import 'galharufa/typography';
+@import 'galharufa/navbar';
+@import 'galharufa/footer';
+@import 'galharufa/pages';
 
 html {
   scroll-behavior: smooth;
@@ -19,4 +20,13 @@ body {
       cursor: hover;
     }
   }
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+.form-control {
+  border-radius: 0;
 }
