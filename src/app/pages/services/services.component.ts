@@ -8,6 +8,7 @@ import { servicesMockup } from '../../API';
 })
 export class ServicesComponent implements OnInit {
   services = servicesMockup;
+  active = 'interp';
 
   constructor() {}
 
