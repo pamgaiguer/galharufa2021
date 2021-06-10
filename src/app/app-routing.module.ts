@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
+import { ActivitiesComponent } from './pages/activities/activities.component';
 import { CastingComponent } from './pages/casting/casting.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { ServicesComponent } from './pages/services/services.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,11 +15,11 @@ const routes: Routes = [
   { path: 'sobre', component: AboutComponent },
   { path: 'casting', component: CastingComponent },
   { path: 'contato', component: ContactComponent },
-  { path: 'servicos', component: ServicesComponent },
+  { path: 'servicos', component: ActivitiesComponent },
   { path: 'home', component: HomeComponent },
 
   { path: '404', component: NotFoundComponent },
-  { path: '**', component: NotFoundComponent },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
@@ -27,9 +27,9 @@ const routes: Routes = [
     CommonModule,
     BrowserModule,
     RouterModule.forRoot(routes, {
-      useHash: false,
-    }),
+      useHash: false
+    })
   ],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}

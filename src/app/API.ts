@@ -1,6 +1,6 @@
 import { getLocaleDateTimeFormat } from '@angular/common';
 
-export const servicesMockup = [
+export const activitiesMockup = [
   {
     icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
     tab_name: 'interp',

@@ -12,11 +12,11 @@
         <div class="card">
           <div class="d-flex">
             <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
-              <li ngbNavItem="{{ svc.tab_name }}" *ngFor="let svc of services">
-                <a ngbNavLink>{{ svc.title }}</a>
+              <li ngbNavItem="{{ act.tab_name }}" *ngFor="let act of activities">
+                <a ngbNavLink>{{ act.title }}</a>
                 <ng-template ngbNavContent>
                   <p>
-                    {{ svc.title }}
+                    {{ act.title }}
                   </p>
                 </ng-template>
               </li>
