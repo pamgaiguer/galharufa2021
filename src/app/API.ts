@@ -51,3 +51,58 @@ export const activitiesMockup = [
     date: getLocaleDateTimeFormat
   }
 ];
+
+export const aboutusMockup = [
+  {
+    id: 1,
+    description: 'Longas'
+  },
+  {
+    id: 2,
+    description: 'Séries'
+  },
+  {
+    id: 3,
+    description: 'Publicidades'
+  },
+  {
+    id: 4,
+    description: 'Institucionais'
+  },
+  {
+    id: 5,
+    description: 'Novelas'
+  },
+  {
+    id: 6,
+    description: 'Clipes'
+  },
+  {
+    id: 7,
+    description: 'Curta e Média Metragem'
+  },
+  {
+    id: 8,
+    description: 'Atendimento para todo Brasil e Exterior'
+  },
+  {
+    id: 9,
+    description: 'Pioneira em pesquisa de campo e pesquisa de elenco'
+  },
+  {
+    id: 10,
+    description: 'Amplo Casting'
+  },
+  {
+    id: 11,
+    description: 'Equipe altamente qualificada'
+  },
+  {
+    id: 12,
+    description: 'Departamento de casting exclusivo'
+  },
+  {
+    id: 13,
+    description: 'Equipe de fiscais de set'
+  }
+];

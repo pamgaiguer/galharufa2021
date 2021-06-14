@@ -1,1 +1,42 @@
-<p>aboutus works!</p>
+<div class="main">
+  <div class="section section-gray">
+    <div class="row align-items-start">
+      <div class="main-header">
+        <h3>Sobre nós</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="d-flex">
+            <div class="me-4">
+              <h3>16 anos no mercado incluindo:</h3>
+
+              <ul>
+                <li *ngFor="let abt of aboutus">
+                  {{ abt.description }}
+                </li>
+              </ul>
+            </div>
+            <div class="me-4" style="border: 1px solid #f0f">
+              <p>
+                Somos mais do que uma agência, somos um Bureau de artistas, onde cada profissional de nosso casting tem explorada suas
+                diversas habilidades, afim de transformar artisticamente com a delicadeza e o toque que cada produção merece.
+              </p>
+              <p>
+                Nosso processo de envio de casting é quase artesanal, selecionando os perfis entendendo as necessidades e sensibilidade de
+                nossos clientes para cada projeto.
+              </p>
+              <figure class="figure">
+                <img src="./assets/images/juliana-web.jpg" class="figure-img img-fluid rounded" alt="..." />
+                <figcaption class="figure-caption text-center">Juliana Azevedo - Diretora</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
