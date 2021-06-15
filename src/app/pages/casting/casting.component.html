@@ -1,1 +1,28 @@
-<p>casting works!</p>
+<div class="main">
+  <div class="section section-gray">
+    <div class="row align-items-start">
+      <div class="main-header">
+        <h3>{{ sectionTitle }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <ul class="list-unstyled">
+            <li *ngFor="let image of images">
+              <a href="">
+                <figure>
+                  <img [src]="image" alt="Random slide" loading="lazy" />
+                  <figcaption>caption</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

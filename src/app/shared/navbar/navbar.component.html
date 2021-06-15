@@ -3,73 +3,44 @@
     <a class="navbar-brand" [routerLink]="['/home']">Galharufa</a>
 
     <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      (click)="isMenuCollapsed = !isMenuCollapsed"
-    >
-      &#9776;
-    </button>
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
 
     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto flex-nowrap">
         <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLink]="['/sobre']"
-            (click)="isMenuCollapsed = true"
-            >A Galharufa</a
-          >
+          <a class="nav-link" [routerLink]="['/sobre']" routerLinkActive="activebutton" (click)="isMenuCollapsed = true">A Galharufa</a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLink]="['/servicos']"
-            (click)="isMenuCollapsed = true"
-            >Servicos</a
-          >
+          <a class="nav-link" [routerLink]="['/servicos']" routerLinkActive="activebutton" (click)="isMenuCollapsed = true">Servicos</a>
         </li>
-        <li
-          class="nav-item"
-          ngbDropdown
-          display="dynamic"
-          placement="bottom-right"
-        >
-          <a
-            class="nav-link"
-            tabindex="0"
-            ngbDropdownToggle
-            id="navbarDropdown3"
-            role="button"
-          >
-            Casting
-          </a>
-          <div
-            ngbDropdownMenu
-            aria-labelledby="navbarDropdown3"
-            class="dropdown-menu"
-          >
+        <li class="nav-item" ngbDropdown display="dynamic" placement="bottom-left">
+          <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown"> Casting </a>
+          <div ngbDropdownMenu class="dropdown-menu">
             <a
               ngbDropdownItem
-              href="#"
+              [routerLink]="['/casting/talentos']"
+              routerLinkActive="activebutton"
               (click)="isMenuCollapsed = true; $event.preventDefault()"
               >Talentos</a
             >
             <a
               ngbDropdownItem
-              href="#"
+              [routerLink]="['/casting/exclusivos']"
+              routerLinkActive="activebutton"
               (click)="isMenuCollapsed = true; $event.preventDefault()"
               >Exclusivos</a
             >
             <a
               ngbDropdownItem
-              href="#"
+              [routerLink]="['/casting/atores']"
+              routerLinkActive="activebutton"
               (click)="isMenuCollapsed = true; $event.preventDefault()"
               >Atores</a
             >
             <a
               ngbDropdownItem
-              href="#"
+              [routerLink]="['/casting/infantil']"
+              routerLinkActive="activebutton"
               (click)="isMenuCollapsed = true; $event.preventDefault()"
               >Infantil</a
             >
@@ -77,12 +48,7 @@
         </li>
 
         <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLink]="['/contato']"
-            (click)="isMenuCollapsed = true"
-            >Contato</a
-          >
+          <a class="nav-link" [routerLink]="['/contato']" routerLinkActive="activebutton" (click)="isMenuCollapsed = true">Contato</a>
         </li>
       </ul>
     </div>

@@ -13,7 +13,27 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'sobre', component: AboutComponent },
-  { path: 'casting', component: CastingComponent },
+  {
+    path: 'casting',
+    children: [
+      {
+        path: 'talentos',
+        component: CastingComponent
+      },
+      {
+        path: 'exclusivos',
+        component: CastingComponent
+      },
+      {
+        path: 'atores',
+        component: CastingComponent
+      },
+      {
+        path: 'infantil',
+        component: CastingComponent
+      }
+    ]
+  },
   { path: 'contato', component: ContactComponent },
   { path: 'servicos', component: ActivitiesComponent },
   { path: 'home', component: HomeComponent },
