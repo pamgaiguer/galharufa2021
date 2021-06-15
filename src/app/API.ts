@@ -1,54 +1,52 @@
-import { getLocaleDateTimeFormat } from '@angular/common';
+export const castType = [
+  { id: 1, name: 'Talentos' },
+  { id: 2, name: 'Exclusivos' },
+  { id: 3, name: 'Atores' },
+  { id: 4, name: 'Infantil' }
+];
 
 export const activitiesMockup = [
   {
     icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
     tab_name: 'interp',
     title: 'Curso de Interpretacao',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-    date: getLocaleDateTimeFormat
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
   },
   {
     icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
     tab_name: 'circo',
     title: 'Curso de Circo',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-    date: getLocaleDateTimeFormat
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
   },
   {
     icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
     tab_name: 'fotog',
     title: 'Material Fotografico',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-    date: getLocaleDateTimeFormat
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
   },
   {
     icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
     tab_name: 'event',
     title: 'Eventos',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-    date: getLocaleDateTimeFormat
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
   },
   {
     icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
     tab_name: 'agenc',
     title: 'Agenciamento',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-    date: getLocaleDateTimeFormat
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
   },
   {
     icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
     tab_name: 'video',
     title: 'Videobook',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-    date: getLocaleDateTimeFormat
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
   },
   {
     icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
     tab_name: 'conv',
     title: 'Convenios',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-    date: getLocaleDateTimeFormat
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
   }
 ];
 
