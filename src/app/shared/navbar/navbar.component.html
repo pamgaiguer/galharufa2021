@@ -16,35 +16,16 @@
         <li class="nav-item" ngbDropdown display="dynamic" placement="bottom-left">
           <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown"> Casting </a>
           <div ngbDropdownMenu class="dropdown-menu">
-            <a
-              ngbDropdownItem
-              [routerLink]="['/casting/talentos']"
-              routerLinkActive="activebutton"
-              (click)="isMenuCollapsed = true; $event.preventDefault()"
-              >Talentos</a
-            >
-            <a
-              ngbDropdownItem
-              [routerLink]="['/casting/exclusivos']"
-              routerLinkActive="activebutton"
-              (click)="isMenuCollapsed = true; $event.preventDefault()"
+            <a ngbDropdownItem [routerLink]="['/casting/talentos']" (click)="isMenuCollapsed = true; $event.preventDefault()">Talentos</a>
+            <a ngbDropdownItem [routerLink]="['/casting/exclusivos']" (click)="isMenuCollapsed = true; $event.preventDefault()"
               >Exclusivos</a
             >
-            <a
-              ngbDropdownItem
-              [routerLink]="['/casting/atores']"
-              routerLinkActive="activebutton"
-              (click)="isMenuCollapsed = true; $event.preventDefault()"
-              >Atores</a
-            >
-            <a
-              ngbDropdownItem
-              [routerLink]="['/casting/infantil']"
-              routerLinkActive="activebutton"
-              (click)="isMenuCollapsed = true; $event.preventDefault()"
-              >Infantil</a
-            >
+            <a ngbDropdownItem [routerLink]="['/casting/atores']" (click)="isMenuCollapsed = true; $event.preventDefault()">Atores</a>
+            <a ngbDropdownItem [routerLink]="['/casting/infantil']" (click)="isMenuCollapsed = true; $event.preventDefault()">Infantil</a>
           </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/blog']" routerLinkActive="activebutton" (click)="isMenuCollapsed = true">Blog</a>
         </li>
 
         <li class="nav-item">

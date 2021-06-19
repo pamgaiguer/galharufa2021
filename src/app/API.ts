@@ -14,12 +14,6 @@ export const activitiesMockup = [
   },
   {
     icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
-    tab_name: 'circo',
-    title: 'Curso de Circo',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
-  },
-  {
-    icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
     tab_name: 'fotog',
     title: 'Material Fotografico',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
@@ -45,7 +39,7 @@ export const activitiesMockup = [
   {
     icon: 'https://dummyimage.com/80x80/888888/fff.png&text=icon',
     tab_name: 'conv',
-    title: 'Convenios',
+    title: 'Clube de Vantagens  ',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'
   }
 ];

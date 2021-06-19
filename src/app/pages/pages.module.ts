@@ -7,9 +7,10 @@ import { CastingComponent } from './casting/casting.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
-  declarations: [AboutComponent, ActivitiesComponent, CastingComponent, ContactComponent, HomeComponent, NotFoundComponent],
+  declarations: [AboutComponent, ActivitiesComponent, CastingComponent, ContactComponent, HomeComponent, NotFoundComponent, BlogComponent],
   imports: [CommonModule, NgbModule],
   exports: [NgbModule]
 })
