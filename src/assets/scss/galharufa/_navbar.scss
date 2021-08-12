@@ -20,7 +20,7 @@
       top: 4px;
       right: 3px;
     }
-    [class^="fa"] {
+    [class^='fa'] {
       top: 2px;
     }
     p {
@@ -78,7 +78,7 @@
   }
 }
 .navbar-transparent,
-[class*="bg"] {
+[class*='bg'] {
   .navbar-brand {
     // color: $white-color;
     @include opacity(0.9);
@@ -87,7 +87,6 @@
     &:hover {
       background-color: transparent;
       @include opacity(1);
-      //   color: $white-color;
     }
   }
 }
@@ -99,8 +98,7 @@
 
 .navbar-nav > li > .dropdown-menu,
 .dropdown .dropdown-menu {
-  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,
-    opacity 0.3s ease 0s, height 0s linear 0.35s;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.3s ease 0s, height 0s linear 0.35s;
 }
 
 .navbar-toggler {
@@ -111,7 +109,7 @@
     background: $font-color;
   }
 
-  .navbar[class*="bg-"] & .navbar-toggler-bar,
+  .navbar[class*='bg-'] & .navbar-toggler-bar,
   .navbar.navbar-transparent & .navbar-toggler-bar {
     background: #fff;
   }

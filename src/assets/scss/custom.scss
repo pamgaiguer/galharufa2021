@@ -1,3 +1,5 @@
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
 @import 'galharufa/variables';
 @import 'galharufa/mixins';
 @import 'galharufa/typography';
@@ -16,7 +18,7 @@ body {
 
     &:hover,
     &:focus {
-      text-decoration: underline;
+      // text-decoration: underline;
       cursor: hover;
     }
   }
