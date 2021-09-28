@@ -8,17 +8,17 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./casting.component.scss']
 })
 export class CastingComponent implements OnInit {
-  sectionTitle: any;
-  images = [62, 83, 466, 965, 982, 1043].map(n => `https://picsum.photos/id/${n}/410/515?grayscale`);
+  sectionName: any;
+  images = [62, 83, 466, 965, 982, 1043, 90, 90, 203, 965, 982, 1043].map(n => `https://picsum.photos/id/${n}/200/280?grayscale`);
 
   constructor(private route: ActivatedRoute, private location: Location) {}
 
-  ngOnInit(): void {
-    this.sectionTitle = this.getCastType();
+  ngOnInit() {
+    this.sectionName = this.getCastType();
   }
 
   getCastType(): any {
-    const path = this.route.snapshot.routeConfig.path;
-    return path;
+    const castingType = this.route.snapshot.routeConfig.path;
+    return castingType;
   }
 }

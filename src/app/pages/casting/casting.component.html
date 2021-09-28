@@ -2,26 +2,27 @@
   <div class="section section-gray">
     <div class="row align-items-start">
       <div class="main-header">
-        <h3>{{ sectionTitle }}</h3>
+        <h3>{{ sectionName }}</h3>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col">
-        <div class="card">
-          <ul class="list-unstyled">
-            <li *ngFor="let image of images">
-              <a href="">
-                <figure>
-                  <img [src]="image" alt="Random slide" loading="lazy" />
-                  <figcaption>caption</figcaption>
-                </figure>
-              </a>
-            </li>
-            <li></li>
-          </ul>
-        </div>
+        <ul class="list-unstyled">
+          <li *ngFor="let image of images">
+            <a href="" [routerLink]="['/casting/exclusivos']">
+              <figure class="figure">
+                <img
+                  [src]="image"
+                  class="figure-img img-fluid"
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

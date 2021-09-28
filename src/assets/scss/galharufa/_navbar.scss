@@ -45,6 +45,7 @@
       font-size: $font-size-small;
       text-transform: uppercase;
       font-weight: 600;
+      cursor: pointer;
     }
     .nav-item .nav-link.btn {
       margin: $navbar-margin-a-btn;
@@ -130,5 +131,10 @@
 
   .dropdown-menu .divider {
     background-color: rgba($white-color, 0.2);
+  }
+}
+.dropdown-menu.show {
+  .dropdown-item {
+    font-size: 14px;
   }
 }

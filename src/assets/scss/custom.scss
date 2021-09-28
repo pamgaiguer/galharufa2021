@@ -28,10 +28,16 @@ body {
   border: none;
   border-radius: 0;
   margin-bottom: 30px;
+  .card-body {
+    padding: 10px 0;
+  }
 }
 .form-control {
   border-radius: 0;
 }
 .activebutton {
-  border-bottom: 2px solid black;
+  // border: 1px solid #f0f;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.253);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.253);
 }

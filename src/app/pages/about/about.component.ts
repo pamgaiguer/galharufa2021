@@ -1,4 +1,6 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { aboutusMockup } from '../../API';
 
 @Component({
@@ -8,7 +10,8 @@ import { aboutusMockup } from '../../API';
 })
 export class AboutComponent implements OnInit {
   aboutus = aboutusMockup;
-  constructor() {}
+  sectionTitle: any;
+  constructor(private route: ActivatedRoute, private location: Location) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 }

@@ -4,10 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { ActivitiesComponent } from './pages/activities/activities.component';
-import { BlogComponent } from './pages/blog/blog.component';
 import { CastingComponent } from './pages/casting/casting.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NewsComponent } from './pages/news/news.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
@@ -35,7 +35,7 @@ const routes: Routes = [
       }
     ]
   },
-  { path: 'blog', component: BlogComponent },
+  { path: 'news', component: NewsComponent },
   { path: 'contato', component: ContactComponent },
   { path: 'servicos', component: ActivitiesComponent },
   { path: 'home', component: HomeComponent },
