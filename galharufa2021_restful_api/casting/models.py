@@ -56,8 +56,8 @@ class Pessoa(models.Model):
     ano = models.PositiveIntegerField(validators=[MinValueValidator(1900), MaxValueValidator(datetime.date.today().year)])
     DRT = models.CharField(validators=[RegexValidator(regex='^.{7}$', message='Length has to be 7!', code='nomatch')])
     altura = models.FloatField()
-    manequim = models.IntegerField()
-    sapato = models.IntegerField()
+    manequim = models.PositiveIntegerField()
+    sapato = models.PositiveIntegerField()
     foto3x4 = models.ImageField()
     foto_corpo_inteiro = models.ImageField()
     foto_com_sorriso = models.ImageField()
@@ -68,11 +68,11 @@ class Pessoa(models.Model):
     endereco = models.OneToOneField(Endereco, on_delete=models.CASCADE, null=True)
     RG = models.IntegerField(validators=[RegexValidator(regex='^.{10}$', message='Length has to be 10!', code='nomatch')])
     CPF = models.IntegerField(validators=[RegexValidator(regex='^.{11}$', message='Length has to be 11!', code='nomatch')]) 
-    # terno
-    # camisa
-    # busto
-    # cintura
-    # quadril
+    terno = models.PositiveIntegerField(null=True) # homens
+    camisa = models.PositiveIntegerField(null=True) # homens
+    busto = models.PositiveIntegerField(null=True) # mulheres
+    cintura = models.PositiveIntegerField(null=True) # mulheres
+    quadril = models.PositiveIntegerField(null=True) # mulheres
     data_nascimento = models.DateField()
     habilidades = models.TextField()
     dados_bancarios = models.OneToOneField(DadosBancarios, on_delete=models.CASCADE, null=True)
