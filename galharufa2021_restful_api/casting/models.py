@@ -11,12 +11,22 @@ class Endereco(models.Model):
     id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    # pais
+    # estado
+    # cidade
+    # bairro
+    # rua
+    # numero
+    # casa/apto
 
 
 class DadosBancarios(models.Model):
     id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    # banco
+    # agencia
+    # conta
 
 
 class Pessoa(models.Model):
