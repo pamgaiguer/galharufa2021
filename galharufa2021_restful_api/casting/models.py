@@ -108,11 +108,12 @@ class Pessoa(models.Model):
     altura = models.FloatField(blank=True)
     manequim = models.PositiveIntegerField(blank=True)
     sapato = models.PositiveIntegerField(blank=True)
-    foto3x4 = models.ImageField(upload_to='static/images/3x4/')
+    foto3x4 = models.ImageField(
+        upload_to=f'static/images/3x4/', null=True)
     foto_corpo_inteiro = models.ImageField(
-        upload_to='static/images/corpo_inteiro/')
+        upload_to=f'static/images/corpo_inteiro/', null=True)
     foto_com_sorriso = models.ImageField(
-        upload_to='static/images/com_sorriso /')
+        upload_to=f'static/images/com_sorriso/', null=True)
     CNH = models.IntegerField(blank=True, validators=[RegexValidator(
         regex='^.{11}$', message='A CNH necessita ter 11 caracteres!', code='nomatch')])
     veiculo = models.CharField(blank=True, max_length=6, choices=VEICULO)

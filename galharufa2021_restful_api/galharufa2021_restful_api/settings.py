@@ -166,7 +166,6 @@ CORS_ALLOWED_ORIGINS = [
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_URL = '/images/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static"  # add static files folder
