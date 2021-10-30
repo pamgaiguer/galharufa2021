@@ -55,6 +55,9 @@ class Endereco(models.Model):
     def __str__(self):
         return f"{self.logradouro}, {self.numero}, {self.cidade} ({self.estado[:2].upper()})"
 
+    class Meta:
+        verbose_name_plural = "Endereços"
+
 
 class DadosBancarios(models.Model):
     id = models.UUIDField(default=uuid.uuid4, unique=True,
@@ -67,6 +70,9 @@ class DadosBancarios(models.Model):
 
     def __str__(self):
         return f"{self.banco}, {self.agencia} - {self.conta}"
+
+    class Meta:
+        verbose_name_plural = "Dados Bancários"
 
 
 class Pessoa(models.Model):
@@ -97,32 +103,34 @@ class Pessoa(models.Model):
     nome_artistico = models.CharField(max_length=200)
     ano = models.PositiveIntegerField(validators=[MinValueValidator(
         1900), MaxValueValidator(datetime.date.today().year)])
-    DRT = models.CharField(validators=[RegexValidator(
+    DRT = models.CharField(blank=True, max_length=7, validators=[RegexValidator(
         regex='^.{7}$', message='O DRT necessita ter 7 caracteres!', code='nomatch')])
-    altura = models.FloatField()
-    manequim = models.PositiveIntegerField()
-    sapato = models.PositiveIntegerField()
-    foto3x4 = models.ImageField()
-    foto_corpo_inteiro = models.ImageField()
-    foto_com_sorriso = models.ImageField()
-    CNH = models.IntegerField(validators=[RegexValidator(
+    altura = models.FloatField(blank=True)
+    manequim = models.PositiveIntegerField(blank=True)
+    sapato = models.PositiveIntegerField(blank=True)
+    foto3x4 = models.ImageField(upload_to='static/images/3x4/')
+    foto_corpo_inteiro = models.ImageField(
+        upload_to='static/images/corpo_inteiro/')
+    foto_com_sorriso = models.ImageField(
+        upload_to='static/images/com_sorriso /')
+    CNH = models.IntegerField(blank=True, validators=[RegexValidator(
         regex='^.{11}$', message='A CNH necessita ter 11 caracteres!', code='nomatch')])
-    veiculo = models.CharField(max_length=6, choices=VEICULO)
-    portfolio = models.URLField()
-    peso = models.IntegerField()
+    veiculo = models.CharField(blank=True, max_length=6, choices=VEICULO)
+    portfolio = models.URLField(blank=True)
+    peso = models.IntegerField(blank=True)
     endereco = models.OneToOneField(
         Endereco, on_delete=models.CASCADE, null=True)
     RG = models.IntegerField(validators=[RegexValidator(
         regex='^.{10}$', message='O RG necessita ter 10 caracteres!', code='nomatch')])
     CPF = models.IntegerField(validators=[RegexValidator(
         regex='^.{11}$', message='O CPF necessita ter 11 caracteres!', code='nomatch')])
-    terno = models.PositiveIntegerField(null=True)  # homens
-    camisa = models.PositiveIntegerField(null=True)  # homens
-    busto = models.PositiveIntegerField(null=True)  # mulheres
-    cintura = models.PositiveIntegerField(null=True)  # mulheres
-    quadril = models.PositiveIntegerField(null=True)  # mulheres
+    terno = models.PositiveIntegerField(null=True, blank=True)  # homens
+    camisa = models.PositiveIntegerField(null=True, blank=True)  # homens
+    busto = models.PositiveIntegerField(null=True, blank=True)  # mulheres
+    cintura = models.PositiveIntegerField(null=True, blank=True)  # mulheres
+    quadril = models.PositiveIntegerField(null=True, blank=True)  # mulheres
     data_nascimento = models.DateField()
-    habilidades = models.TextField()
+    habilidades = models.TextField(blank=True)
     dados_bancarios = models.OneToOneField(
         DadosBancarios, on_delete=models.CASCADE, null=True)
     created = models.DateTimeField(auto_now_add=True)
