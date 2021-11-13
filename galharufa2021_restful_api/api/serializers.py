@@ -5,3 +5,8 @@ class PessoaAdminSerializer(serializers.ModelSerializer):
     class Meta:
         model = Pessoa
         fields = '__all__'
+
+class PessoaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Pessoa
+        fields = '__all__'
