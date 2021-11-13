@@ -114,7 +114,7 @@ class Pessoa(models.Model):
         upload_to=f'static/images/corpo_inteiro/', null=True)
     foto_com_sorriso = models.ImageField(
         upload_to=f'static/images/com_sorriso/', null=True)
-    CNH = models.IntegerField(blank=True, validators=[RegexValidator(
+    CNH = models.IntegerField(blank=True, null=True, validators=[RegexValidator(
         regex='^.{11}$', message='A CNH necessita ter 11 caracteres!', code='nomatch')])
     veiculo = models.CharField(blank=True, max_length=6, choices=VEICULO)
     portfolio = models.URLField(blank=True)
