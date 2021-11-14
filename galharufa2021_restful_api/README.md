@@ -53,7 +53,7 @@ headers = {"Authorization": Bearer TOKEN",
           "Content-type": "application/json"}
 ```
 
-The `TOKEN` can be generated on the `http://localhost:8000/api/users/token/` URL.
+The `TOKEN` can be generated on the `http://localhost:8000/api/users/token/` URL and expires after 30 minutes.
 
 ### API GET routes (TOKEN not needed)
 
