@@ -39,10 +39,10 @@ The server will be running on `localhost` (`127.0.0.1`) on port 8000.
 - `/api/modelos-admin/`
 - `/api/criancas-admin/`
 - `/api/pessoa-admin/slug`
-- `api/ator-admin/slug`
-- `api/figuracao-admin/slug`
-- `api/modelo-admin/slug`
-- `api/crianca-admin/slug`
+- `/api/ator-admin/slug`
+- `/api/figuracao-admin/slug`
+- `/api/modelo-admin/slug`
+- `/api/crianca-admin/slug`
 
 Example: `http://127.0.0.1:8000/api/pessoas-admin/` returns a JSON response with all casting database entries.
 
@@ -61,10 +61,10 @@ The `TOKEN` can be generated on the `http://localhost:8000/api/users/token/` URL
 - `/api/figuracoes/`
 - `/api/modelos/`
 - `/api/criancas/`
-- `api/ator/slug`
-- `api/figuracao/slug`
-- `api/modelo/slug`
-- `api/crianca/slug`
+- `/api/ator/slug`
+- `/api/figuracao/slug`
+- `/api/modelo/slug`
+- `/api/crianca/slug`
 
 Example of single entry: `http://127.0.0.1:8000/api/ator/joao/`
 
