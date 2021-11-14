@@ -84,4 +84,6 @@ This should return a JSON response with:
 
 ## To-do list
 
-### Implement POST request for admin
+### Implement POST/PUT requests for admin
+
+### Implement DELETE requests for admin
