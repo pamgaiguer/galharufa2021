@@ -24,6 +24,8 @@ On the folder `/galharufa2021_restful_api`, run the following command:
 
 The server will be running on `localhost` (`127.0.0.1`) on port 8000.
 
+## Usage
+
 ### Token generation routes
 
 - `/api/users/token`
@@ -79,3 +81,7 @@ This should return a JSON response with:
  'nome_artistico': 'João',
  'sapato': 99}
 ```
+
+## To-do list
+
+### Implement POST request for admin
