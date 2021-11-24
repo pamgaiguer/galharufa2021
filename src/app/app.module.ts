@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
+import { AdminModule } from './admin/admin.module';
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
@@ -33,7 +34,8 @@ const cookieConfig: NgcCookieConsentConfig = {
     SharedModule,
     NgbModule,
     FormsModule,
-    NgcCookieConsentModule.forRoot(cookieConfig)
+    NgcCookieConsentModule.forRoot(cookieConfig),
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
