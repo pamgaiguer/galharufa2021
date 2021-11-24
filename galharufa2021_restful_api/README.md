@@ -15,6 +15,8 @@ On the folder `/galharufa2021_restful_api`, run the following command:
 
 Include `DJANGO_SECRET_KEY` on your `PATH` as an environment variable.
 
+- MacOs uses the file .zshrc to `PATH` locate the environment variables.
+
 ### Running the server
 
 On the folder `/galharufa2021_restful_api`, run the following command:
