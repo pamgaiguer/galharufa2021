@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'Agencia Galharufa - 2021';
+  title = 'Agencia Galharufa';
 
   //keep refs to subscriptions to be able to unsubscribe later
   private popupOpenSubscription: Subscription;
@@ -21,22 +21,12 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private ccService: NgcCookieConsentService) {}
 
   ngOnInit() {
-    // subscribe to cookieconsent observables to react to main events
-    this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(() => {
-      // you can use this.ccService.getConfig() to do stuff...
-    });
-
-    this.popupCloseSubscription = this.ccService.popupClose$.subscribe(() => {
-      // you can use this.ccService.getConfig() to do stuff...
-    });
-
-    this.revokeChoiceSubscription = this.ccService.revokeChoice$.subscribe(() => {
-      // you can use this.ccService.getConfig() to do stuff...
-    });
+    this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(() => {});
+    this.popupCloseSubscription = this.ccService.popupClose$.subscribe(() => {});
+    this.revokeChoiceSubscription = this.ccService.revokeChoice$.subscribe(() => {});
   }
 
   ngOnDestroy() {
-    // unsubscribe to cookieconsent observables to prevent memory leaks
     this.popupOpenSubscription.unsubscribe();
     this.popupCloseSubscription.unsubscribe();
     this.initializeSubscription.unsubscribe();
