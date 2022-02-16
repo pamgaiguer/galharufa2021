@@ -1,6 +1,6 @@
 # Galharufa2021
 
-new website for the model agency in brazil. Angular version 13
+new website for the model agency in brazil. Angular version 12
 
 ## Development server
 
